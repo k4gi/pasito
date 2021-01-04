@@ -9,6 +9,15 @@ var is_weapon_enabled = false
 
 var player_node = null
 
+var ammo_in_weapon = 1
+var spare_ammo = 1
+const AMMO_IN_MAG = 1
+
+const CAN_RELOAD = false
+const CAN_REFILL = false
+
+const RELOADING_ANIM_NAME = ""
+
 func _ready():
 	pass
 
@@ -43,3 +52,7 @@ func unequip_weapon():
 		return true
 
 	return false
+
+func reload_weapon():
+	return false
+
